@@ -5,14 +5,19 @@
  * Date: 27.10.2016
  * Time: 14:45
  */
-require_once "Basainter.php";
+require_once "relclass.php";
 
-$obj = new Tools();
-$obj->summa(2,3);
-$itog = $obj->showres();
-echo $itog;
-$obj->nool();
-echo "<br/>";
+$obj=new relclass();
+$obj->summa(5,5);
+echo $obj->showres();
+echo "</br>";
+$obj->umn(5,5);
+echo $obj->showres();
+echo "</br>";
+$obj->minus(5,5);
+echo $obj->showres();
+echo "</br>";
+$obj->delenie(5,5);
 echo $obj->showres();
 
 ?>

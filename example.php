@@ -13,5 +13,5 @@ interface A
     public function minus($one, $two);// вычитание двух чисел
     public function delenie($one, $two);// деление двух чисел
 
-    public function showres($one, $two);// вывод результата
+    public function showres();// вывод результата
 }
