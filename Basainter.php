@@ -11,12 +11,18 @@ interface A
     public function summa($one, $two);
 
 }
-interface B extends A
+interface B
 {
 
     public function showres();
 }
-class Tools implements B
+
+
+interface C extends A, B
+{
+    public function nool();
+}
+class Tools implements C
 {
     public $res;
 
@@ -28,6 +34,11 @@ class Tools implements B
     public function showres()
     {
         return $this->res;
+    }
+
+    public function nool()
+    {
+        $this->res = 0;
     }
 }
 

@@ -11,5 +11,8 @@ $obj = new Tools();
 $obj->summa(2,3);
 $itog = $obj->showres();
 echo $itog;
+$obj->nool();
+echo "<br/>";
+echo $obj->showres();
 
 ?>
