@@ -6,12 +6,17 @@
  * Time: 14:41
  */
 
-interface Basainter
+interface A
 {
     public function summa($one, $two);
+
+}
+interface B extends A
+{
+
     public function showres();
 }
-class Tools implements Basainter
+class Tools implements B
 {
     public $res;
 
